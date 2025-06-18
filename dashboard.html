@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Realtime Database - CRUD</title>
+ 
+</head>
+<body>
+  <h2>Firebase Realtime Database - CRUD</h2>
+  
+  <input type="text" id="userId" placeholder="User ID"><br>
+  <input type="text" id="name" placeholder="Name"><br>
+  <input type="email" id="email" placeholder="Email"><br>
+  <button onclick="createData()">Create</button>
+  <button onclick="readData()">Read</button>
+  <button onclick="updateData()">Update</button>
+  <button onclick="deleteData()">Delete</button>
+  <P id="greeting"></P>
+   <script>
+    // ✅ Extract the 'name' from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+ 
+    // ✅ Set the greeting text
+    if (name) {
+      document.getElementById('greeting').textContent = "Hello, " + decodeURIComponent(name);
+    }
+  </script>
+</body>
+</html>
