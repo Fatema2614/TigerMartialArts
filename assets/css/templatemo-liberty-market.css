@@ -654,7 +654,7 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #7453fc!important;
+    color: gray !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
